@@ -1,0 +1,9 @@
+#!/bin/env ash
+
+#
+# script to help test and debug Concourse CI pipelines
+#
+
+echo "I Succeeded."
+
+exit 0

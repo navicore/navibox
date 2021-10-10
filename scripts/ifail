@@ -1,0 +1,17 @@
+#!/bin/env ash
+
+#
+# script to help test and debug Concourse CI pipelines
+#
+
+function fail {
+    printf '%s\n' "$1" >&2  ## Send message to stderr
+    exit "${2-1}"  ## Return a code specified by $2 or 1 by default.
+}
+
+#working_value=5
+
+[[ $working_value =~ ^[0-9]+$ ]] || fail "working_value must be an integer value!"
+
+echo "I wanted to fail but did not."
+
